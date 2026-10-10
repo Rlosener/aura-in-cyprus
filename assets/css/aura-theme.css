@@ -1,0 +1,361 @@
+/* Aura In Cyprus brand layer
+   Keeps the original Piller component system intact and applies the Aura identity. */
+
+:root {
+  --theme-color: #60a6b7;
+  --theme-color2: #2b485b;
+  --theme-color3: #8bc4d0;
+  --title-color: #2b485b;
+  --body-color: #5c6f7a;
+  --smoke-color: #f3f8f9;
+  --smoke-color2: #eaf2f4;
+  --black-color: #223e4f;
+  --black-color2: #1c3442;
+  --gray-color: #2b485b;
+  --gray-color2: #d9e6e9;
+  --light-color: #80939d;
+  --th-border-color: #d7e5e9;
+  --th-border-color2: #56727f;
+  --dark-color: #172d38;
+  --aura-deep: #2b485b;
+  --aura-cyan: #60a6b7;
+  --aura-cyan-soft: #dcecef;
+  --aura-surface: #f7fafb;
+  --aura-gradient: linear-gradient(125deg, #2b485b 0%, #38677a 52%, #60a6b7 100%);
+  --aura-shadow: 0 18px 50px rgba(43, 72, 91, 0.11);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.aura-site {
+  color: var(--body-color);
+  background: #fff;
+  accent-color: var(--aura-cyan);
+}
+
+body.aura-site ::selection {
+  color: #fff;
+  background: var(--aura-cyan);
+}
+
+body.aura-site :where(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid rgba(96, 166, 183, 0.42);
+  outline-offset: 3px;
+}
+
+.aura-site h1,
+.aura-site h2,
+.aura-site h3,
+.aura-site h4,
+.aura-site h5,
+.aura-site h6,
+.aura-site .box-title,
+.aura-site .sec-title {
+  color: var(--aura-deep);
+}
+
+.aura-site .text-theme {
+  color: var(--aura-cyan) !important;
+}
+
+.aura-site .bg-theme,
+.aura-site .bg-theme2 {
+  background-color: var(--aura-cyan) !important;
+}
+
+.aura-site .bg-smoke {
+  background-color: var(--aura-surface) !important;
+}
+
+.aura-site .preloader {
+  background: var(--aura-gradient);
+}
+
+.aura-site .preloader .letters-loading,
+.aura-site .preloader .letters-loading::after {
+  color: #fff;
+}
+
+.aura-site .preloader .th-btn {
+  color: var(--aura-deep);
+  background: #fff;
+}
+
+.aura-site .color-scheme {
+  border: 1px solid rgba(43, 72, 91, 0.13);
+  box-shadow: var(--aura-shadow);
+}
+
+.aura-site .color-scheme .switchIcon,
+.aura-site .color-scheme .color-switch-btns button:first-child {
+  color: #fff;
+  background: var(--aura-deep);
+}
+
+.aura-site .color-scheme .color-switch-btns button:nth-child(2),
+.aura-site .color-scheme .color-switch-btns button:nth-child(5) {
+  color: #fff;
+  background: var(--aura-cyan);
+}
+
+.aura-site .header-logo,
+.aura-site .mobile-logo,
+.aura-site .footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.aura-site .header-logo img,
+.aura-site .mobile-logo img,
+.aura-site .footer-logo img,
+.aura-site img[src*="aura-logo"] {
+  width: auto;
+  max-width: 210px;
+  height: auto;
+  max-height: 82px;
+  object-fit: contain;
+}
+
+.aura-site .header-layout1 .header-logo img,
+.aura-site .header-default .header-logo img {
+  width: 178px;
+  max-width: 178px;
+  max-height: 72px;
+}
+
+.aura-site .mobile-logo img {
+  width: 154px;
+  max-width: 154px;
+  max-height: 72px;
+}
+
+.aura-site .footer-logo img {
+  width: 205px;
+  max-width: 205px;
+  max-height: 96px;
+}
+
+.aura-site .header-top,
+.aura-site .header-layout1 .header-top,
+.aura-site .header-default.header-layout1 .header-top {
+  color: rgba(255, 255, 255, 0.86);
+  background: #203d4d;
+}
+
+.aura-site .header-top a,
+.aura-site .header-top i,
+.aura-site .header-top .header-links li,
+.aura-site .header-layout1 .header-top .header-links a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.aura-site .header-top a:hover,
+.aura-site .header-top a:focus,
+.aura-site .header-top .header-links a:hover {
+  color: #fff;
+}
+
+.aura-site .header-default .menu-area,
+.aura-site .header-layout1 .menu-area {
+  background: var(--aura-gradient);
+}
+
+.aura-site .header-default .main-menu > ul > li > a,
+.aura-site .header-layout1 .main-menu > ul > li > a {
+  color: #fff;
+}
+
+.aura-site .header-default .main-menu > ul > li > a:hover,
+.aura-site .header-default .main-menu > ul > li.active > a,
+.aura-site .header-layout1 .main-menu > ul > li > a:hover,
+.aura-site .header-layout1 .main-menu > ul > li.active > a {
+  color: #cbe8ed;
+}
+
+.aura-site .main-menu .sub-menu,
+.aura-site .main-menu .mega-menu,
+.aura-site .th-menu-area,
+.aura-site .sidemenu-content,
+.aura-site .popup-search-box form {
+  border-color: rgba(43, 72, 91, 0.12);
+  box-shadow: var(--aura-shadow);
+}
+
+.aura-site .main-menu .sub-menu a:hover,
+.aura-site .th-mobile-menu li a:hover,
+.aura-site .th-mobile-menu li.active > a {
+  color: var(--aura-cyan);
+}
+
+.aura-site .icon-btn,
+.aura-site .th-menu-toggle,
+.aura-site .searchClose,
+.aura-site .closeButton {
+  border-color: rgba(96, 166, 183, 0.35);
+}
+
+.aura-site .icon-btn:hover,
+.aura-site .th-menu-toggle:hover,
+.aura-site .searchClose:hover,
+.aura-site .closeButton:hover {
+  color: #fff;
+  background: var(--aura-cyan);
+  border-color: var(--aura-cyan);
+}
+
+.aura-site .th-btn {
+  color: #fff;
+  background: var(--aura-cyan);
+  border-color: var(--aura-cyan);
+  box-shadow: 0 10px 24px rgba(43, 72, 91, 0.12);
+}
+
+.aura-site .th-btn::before,
+.aura-site .th-btn::after {
+  background: var(--aura-deep);
+}
+
+.aura-site .th-btn:hover,
+.aura-site .th-btn:focus,
+.aura-site .th-btn.active {
+  color: #fff;
+  border-color: var(--aura-deep);
+}
+
+.aura-site .th-btn.style2,
+.aura-site .th-btn.style3,
+.aura-site .th-btn.outline {
+  color: var(--aura-deep);
+  border-color: var(--aura-deep);
+}
+
+.aura-site .th-btn.style2:hover,
+.aura-site .th-btn.style3:hover,
+.aura-site .th-btn.outline:hover {
+  color: #fff;
+}
+
+.aura-site :where(input, select, textarea, .form-control, .form-select) {
+  border-color: #cfdee2;
+}
+
+.aura-site :where(input, select, textarea, .form-control, .form-select):focus {
+  border-color: var(--aura-cyan);
+  box-shadow: 0 0 0 4px rgba(96, 166, 183, 0.14);
+}
+
+.aura-site :where(.property-card, .property-card2, .property-card3, .property-box, .blog-card, .blog-box, .team-card, .team-box, .service-card, .service-box, .price-card, .agency-card, .product) {
+  border-color: rgba(43, 72, 91, 0.12);
+}
+
+.aura-site :where(.property-card, .property-card2, .property-card3, .property-box, .blog-card, .blog-box, .team-card, .team-box, .service-card, .service-box, .price-card, .agency-card, .product):hover {
+  box-shadow: var(--aura-shadow);
+}
+
+.aura-site .property-card .property-tag,
+.aura-site .property-box .property-tag,
+.aura-site .property-status,
+.aura-site .product-tag {
+  color: #fff;
+  background: var(--aura-deep);
+}
+
+.aura-site .swiper-pagination-bullet-active,
+.aura-site .slick-dots button::before,
+.aura-site .filter-menu .th-btn.active {
+  background: var(--aura-cyan);
+  border-color: var(--aura-cyan);
+}
+
+.aura-site .breadcumb-wrapper::before,
+.aura-site [class*="breadcumb"]::before {
+  background: linear-gradient(90deg, rgba(25, 51, 65, 0.88), rgba(43, 72, 91, 0.5));
+}
+
+.aura-site .breadcumb-title,
+.aura-site .breadcumb-menu a,
+.aura-site .breadcumb-menu li {
+  color: #fff;
+}
+
+.aura-site .widget_title::before,
+.aura-site .sec-title .text-theme,
+.aura-site .sub-title {
+  color: var(--aura-cyan);
+}
+
+.aura-site .scroll-top {
+  color: #fff;
+  background: var(--aura-deep);
+}
+
+.aura-site .scroll-top path {
+  stroke: var(--aura-cyan);
+}
+
+.aura-site .footer-wrapper,
+.aura-site .footer-layout1,
+.aura-site .footer-layout2,
+.aura-site .footer-layout3,
+.aura-site .footer-layout4 {
+  --title-color: #fff;
+  --body-color: rgba(255, 255, 255, 0.76);
+  background-color: #1d3745;
+}
+
+.aura-site .footer-wrapper a:hover,
+.aura-site .footer-wrapper .th-social a:hover,
+.aura-site .copyright-wrap a:hover {
+  color: #bfe1e7;
+}
+
+.aura-site .copyright-wrap {
+  background: #172e3a;
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+.aura-site .woocommerce-Price-currencySymbol,
+.aura-site .property-card .price,
+.aura-site .property-box .price,
+.aura-site .product-price {
+  color: var(--aura-cyan);
+}
+
+.aura-site table th,
+.aura-site .cart_table th {
+  color: #fff;
+  background: var(--aura-deep);
+}
+
+.aura-site .accordion-button:not(.collapsed),
+.aura-site .nav-link.active {
+  color: var(--aura-deep);
+  background: var(--aura-cyan-soft);
+}
+
+@media (max-width: 1199px) {
+  .aura-site .header-layout1 .header-logo img,
+  .aura-site .header-default .header-logo img {
+    width: 158px;
+    max-width: 158px;
+  }
+}
+
+@media (max-width: 767px) {
+  .aura-site .header-logo img,
+  .aura-site .footer-logo img {
+    max-width: 160px;
+    max-height: 74px;
+  }
+
+  .aura-site .mobile-logo img {
+    width: 144px;
+    max-width: 144px;
+  }
+
+  .aura-site .th-btn {
+    box-shadow: none;
+  }
+}
